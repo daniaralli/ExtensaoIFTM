@@ -11,5 +11,5 @@ import br.edu.iftm.extensaoSTS.domain.Atividade;
 @Repository
 public interface AtividadeRepository extends JpaRepository<Atividade, Integer>{
 	//@Query("Select a from Atividade a where a.nome like %:nome%")
-	public List<Atividade> findByNomeContaining(@Param("nome") String nome);
+	public List<Atividade> findByNomeContainingIgnoreCase(@Param("nome") String nome);
 }

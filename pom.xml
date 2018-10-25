@@ -6,10 +6,11 @@
 	<groupId>br.edu.iftm.extensaoSTS</groupId>
 	<artifactId>ExtensaoSTS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<!--<packaging>jar</packaging>-->
+	<packaging>war</packaging>
 
 	<name>ExtensaoSTS</name>
-	<description>Sistema de Extensao do iftm</description>
+	<description>Sistema Extensao do IFTM</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -46,6 +47,21 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-undertow</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
 		
 	</dependencies>
